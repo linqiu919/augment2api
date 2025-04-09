@@ -6,9 +6,9 @@ services:
     restart: always
     volumes:
       - redis_data:/data
-    command: redis-server --requirepass $${REDIS_PASSWORD:-yourpassword}
+    command: redis-server --requirepass ${REDIS_PASSWORD:-yourpassword}
     healthcheck:
-      test: ["CMD", "redis-cli", "-a", "$${REDIS_PASSWORD:-yourpassword}", "ping"]
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD:-yourpassword}", "ping"]
       interval: 5s
       timeout: 3s
       retries: 5
