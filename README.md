@@ -1,5 +1,7 @@
 # Augment2Api
 
+# Using this item will quickly result in your account being banned, so it is no longer recommended.
+
 **English** | [中文](README_zh.md)
 
 > A middleware service for connecting to Augment API, providing OpenAI-compatible interfaces with support for Claude3.7、Claude4 model calls.
